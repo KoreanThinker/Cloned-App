@@ -13,7 +13,7 @@ import { useNavigation } from '@react-navigation/native';
 
 const Home = () => {
 
-    const { navigate } = useNavigation()
+    const { replace } = useNavigation()
 
     const drawerRef = useRef<DrawerLayout>(null)
 
@@ -32,7 +32,7 @@ const Home = () => {
             <DrawerLayout
                 ref={drawerRef}
                 drawerWidth={WIDTH * 0.7}
-                drawerPosition={DrawerLayout.positions.Right}
+                drawerPosition='right'
                 drawerType='front'
                 drawerBackgroundColor="#fff"
                 overlayColor='rgba(0, 0, 0, 0.5)'
@@ -40,7 +40,7 @@ const Home = () => {
                 <Header onMenu={onMenu} />
                 <FlatList
                     data={seriesData}
-                    renderItem={({ item }) => <HomeScreenCard title={item.title} onPress={() => navigate(item.screenName)} />}
+                    renderItem={({ item }) => <HomeScreenCard title={item.title} onPress={() => replace(item.screenName)} />}
                 />
             </DrawerLayout>
         </LinearGradient>
