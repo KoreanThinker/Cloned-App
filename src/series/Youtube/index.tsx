@@ -1,13 +1,13 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
-import HomeScreen from './HomeScreen';
+import MainScreen from './MainScreen';
 
 const Stack = createStackNavigator();
 
 const Youtube = () => {
     return (
-        <Stack.Navigator>
-            <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Navigator screenOptions={{ headerShown: false }} >
+            <Stack.Screen name="Main" component={MainScreen} />
         </Stack.Navigator>
     );
 }

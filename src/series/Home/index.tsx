@@ -40,7 +40,7 @@ const Home = () => {
                 <Header onMenu={onMenu} />
                 <FlatList
                     data={seriesData}
-                    renderItem={({ item }) => <HomeScreenCard title={item.title} onPress={() => replace(item.screenName)} />}
+                    renderItem={({ item }) => <HomeScreenCard title={item.title} onPress={() => replace(item.screenName, undefined)} />}
                 />
             </DrawerLayout>
         </LinearGradient>
