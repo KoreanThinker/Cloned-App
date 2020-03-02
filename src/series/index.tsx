@@ -3,7 +3,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
 import HomeScreen from './Home'
-import Youtube from './Youtube';
+import Youtube from './Youtube/screens';
 
 const Stack = createStackNavigator();
 

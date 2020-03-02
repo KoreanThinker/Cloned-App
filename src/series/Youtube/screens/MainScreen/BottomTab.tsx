@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { StyleSheet, Text, View } from 'react-native'
-import TabHomeIcon from '../SVG/TabHomeIcon'
+import TabHomeIcon from '../../component/SVG/TabHomeIcon'
 
 
 

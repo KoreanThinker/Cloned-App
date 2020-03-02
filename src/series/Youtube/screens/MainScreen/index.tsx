@@ -1,18 +1,24 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { View, StyleSheet, FlatList } from 'react-native'
 import Constants from 'expo-constants'
 import Header from './Header'
 import BottomTab from './BottomTab'
+import { YtmCardData } from '../../component/youtubeDatas'
+import YtmCard from '../../component/Card/YtmCard'
+import { WIDTH } from '../../../../component/styles'
 
 const MainScreen = () => {
+
+    const [data, setData] = useState(YtmCardData)
+
     return (
         <View style={styles.container} >
             <FlatList
-                style={{ backgroundColor: 'red' }}
+                style={{ flex: 1, width: WIDTH }}
                 showsVerticalScrollIndicator={false}
                 ListHeaderComponent={<Header />}
-                data={['1']}
-                renderItem={() => <View style={{ height: 2000 }} />}
+                data={YtmCardData}
+                renderItem={({ item }) => <YtmCard {...item} />}
             />
             <BottomTab />
         </View>

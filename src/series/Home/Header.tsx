@@ -1,7 +1,7 @@
 import React from 'react'
 import { View, Text, StyleSheet } from 'react-native'
 import { BaseButton } from 'react-native-gesture-handler'
-import HomeMenu from '../../component/svg/HomeMenu'
+import HomeMenu from './SVG/HomeMenu'
 
 
 interface HeaderProps {

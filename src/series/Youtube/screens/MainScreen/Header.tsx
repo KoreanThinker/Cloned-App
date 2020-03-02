@@ -1,9 +1,9 @@
 import React from 'react'
 import { View, StyleSheet, Image } from 'react-native'
-import YoutubePremiumIcon from '../SVG/YoutubePremiumIcon'
+import YoutubePremiumIcon from '../../component/SVG/YoutubePremiumIcon'
 import { TouchableWithoutFeedback, RectButton, BorderlessButton, TouchableNativeFeedback, } from 'react-native-gesture-handler'
 import { useNavigation } from '@react-navigation/native'
-import HeaderSearchIcon from '../SVG/HeaderSearchIcon'
+import HeaderSearchIcon from '../../component/SVG/HeaderSearchIcon'
 
 const Header = () => {
 
