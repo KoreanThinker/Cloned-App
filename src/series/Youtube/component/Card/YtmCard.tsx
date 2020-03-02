@@ -32,7 +32,7 @@ const YtmCard: React.FC<YtmCardProps> = (props) => {
                     </View>
                 </View>
                 <BorderlessButton style={{ height: 40 }} >
-                    <YoutubeMenuIcon />
+                    {/* <YoutubeMenuIcon /> */}
                 </BorderlessButton>
             </View>
         </View>
